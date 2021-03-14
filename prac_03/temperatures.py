@@ -26,13 +26,13 @@ def main():
 
 
 def convert_to_fahrenheit(celsius):
-    """converts celsius to fahrenheit"""
+    """convert celsius to fahrenheit"""
     fahrenheit = celsius * 9.0 / 5 + 32
     print("Result: {:.2f} F".format(fahrenheit))
 
 
 def convert_to_celsius(fahrenheit):
-    """converts fahrenheit to celsius"""
+    """convert fahrenheit to celsius"""
     celsius = 5 / 9 * (fahrenheit - 32)
     print("Result: {:.2f} C".format(celsius))
 

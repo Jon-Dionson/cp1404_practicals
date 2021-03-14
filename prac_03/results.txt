@@ -1,0 +1,5 @@
+16 is Bad
+61 is Passable
+2 is Bad
+91 is Excellent
+89 is Passable
