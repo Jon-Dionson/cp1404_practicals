@@ -18,5 +18,5 @@ def generate_score():
     print(f"{score} is {determine_score(score)}")
 
 
-# main()
-generate_score()
+main()
+# generate_score()
