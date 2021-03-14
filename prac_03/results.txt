@@ -1,5 +1,5 @@
-16 is Bad
-61 is Passable
-2 is Bad
-91 is Excellent
-89 is Passable
+71 is Passable
+18 is Bad
+49 is Bad
+85 is Passable
+25 is Bad
