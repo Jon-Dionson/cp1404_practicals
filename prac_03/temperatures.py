@@ -9,6 +9,7 @@ Q - Quit"""
 
 
 def main():
+    """run the program"""
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
