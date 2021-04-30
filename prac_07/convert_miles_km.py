@@ -17,10 +17,9 @@ class MilesConverterApp(App):
         return self.root
 
     def convert_miles_to_kilometers(self, miles):
-        print("convert miles to kilometers")
-        kilometers = miles*MILES_TO_KILOMETERS
-        print(kilometers)
-        self.output_km = self.root.ids.miles.text
+        output_km = miles*MILES_TO_KILOMETERS
+        print(output_km)
+        self.root.ids.output_label.text = str(output_km)
 
 
 MilesConverterApp().run()
