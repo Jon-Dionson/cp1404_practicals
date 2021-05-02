@@ -5,17 +5,25 @@ BoxLayout:
         orientation: 'horizontal'
         TextInput:
             id: miles
+            text: "0"
+#            on_text: app.convert_miles_to_kilometers(int(miles.text))
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: "up"
+                on_press: app.handle_increment(miles.text, 1)
             Button:
                 text: "down"
+                on_press: app.handle_increment(miles.text, -1)
+
     # rest of body
     Button:
         text: "convert miles to kilometers"
         on_press: app.convert_miles_to_kilometers(int(miles.text))
     Label:
-        text: "this is a test message"
+        id: output_label
+        text: app.output_km
+        color: (1, 1, 0, 1)
+
 
 
