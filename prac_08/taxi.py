@@ -25,8 +25,7 @@ class Taxi(Car):
     def get_fare(self):
         """Return the price for the taxi trip."""
         # rounds fare to closest 10 cents
-        fare = round(self.price_per_km * self.current_fare_distance, 1)
-        return fare
+        return round(self.price_per_km * self.current_fare_distance, 1)
 
     def start_fare(self):
         """Begin a new fare."""
