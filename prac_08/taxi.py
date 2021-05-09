@@ -21,7 +21,6 @@ class Taxi(Car):
                                                              self.current_fare_distance,
                                                              self.price_per_km)
 
-    @property
     def get_fare(self):
         """Return the price for the taxi trip."""
         # rounds fare to closest 10 cents
