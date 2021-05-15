@@ -7,8 +7,12 @@ file_directory = {}
 for filename in os.listdir('.'):
 
     file_type = filename.split(".")[-1]
-    print(file_type)
+    if file_type not in file_directory:
+        category = input(f"What category would you like to sort {file_type} files into? ")
+        file_directory[file_type] = category
     try:
-        os.mkdir(file_type)
+        os.mkdir(category)
     except FileExistsError:
         pass
+
+    shutil.move(filename, category)
